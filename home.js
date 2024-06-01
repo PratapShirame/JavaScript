@@ -41,3 +41,20 @@ const orangeJuice = fruitProcessor( 30, 5);
 console.log(orangeJuice);
 
 
+// Function decalarition and expression
+
+function calAge1(birthYear){
+    const age = 2024 - birthYear;
+    return age;
+}
+
+const age= calAge1(1999);
+console.log(age);
+
+//Function Expression
+const calAge2 = function (birthYear){
+    return 2024- birthYear;
+}
+ const age1 = calAge2(1998);
+ console.log(age, age1);
+
