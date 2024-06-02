@@ -16,5 +16,5 @@ getSummary: function (){
     }
 }
 }
-console.log(`${Pratap.firstName} is a ${Pratap.calAge()} year old and ${Pratap.getSummary()}.`);
+console.log(`${Pratap.firstName} is a ${Pratap.calAge()} year old ${Pratap.job} and ${Pratap.getSummary()}.`);
 
