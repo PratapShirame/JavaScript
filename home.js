@@ -58,3 +58,30 @@ const calAge2 = function (birthYear){
  const age1 = calAge2(1998);
  console.log(age, age1);
 
+
+
+
+ //Function coding challenges
+ 
+ const calcAverage= (a, b, c)=>(a+b+c)/3;
+ 
+ const  scoreDolphins = calcAverage(44, 23, 71);
+ console.log(scoreDolphins);
+ 
+ const scoreKoalas =calcAverage(65, 54, 49);
+ console.log(scoreKoalas);
+ 
+ const checkWinner = function(avgDolphins, avgKoalas){
+    if (avgDolphins >= avgKoalas){
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+    }else if (avgKoalas >= avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    }else{
+        console.log('No team wins...');
+    }
+ }
+
+  checkWinner(scoreDolphins, scoreKoalas);
+    
+
+
