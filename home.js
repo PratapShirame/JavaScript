@@ -24,64 +24,79 @@
 
 
 // Write a fuction 
-function logger(){
-    console.log("Pratap Shirame ");
-}
-logger();
+// function logger(){
+//     console.log("Pratap Shirame ");
+// }
+// logger();
 
-function fruitProcessor ( apples, oranges){
-    const juice = `juice with ${apples} apples amd ${oranges} oranges`;
-    return juice;
-}
+// function fruitProcessor ( apples, oranges){
+//     const juice = `juice with ${apples} apples amd ${oranges} oranges`;
+//     return juice;
+// }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
 
-const orangeJuice = fruitProcessor( 30, 5);
-console.log(orangeJuice);
-
-
-// Function decalarition and expression
-
-function calAge1(birthYear){
-    const age = 2024 - birthYear;
-    return age;
-}
-
-const age= calAge1(1999);
-console.log(age);
-
-//Function Expression
-const calAge2 = function (birthYear){
-    return 2024- birthYear;
-}
- const age1 = calAge2(1998);
- console.log(age, age1);
+// const orangeJuice = fruitProcessor( 30, 5);
+// console.log(orangeJuice);
 
 
+// // Function decalarition and expression
+
+// function calAge1(birthYear){
+//     const age = 2024 - birthYear;
+//     return age;
+// }
+
+// const age= calAge1(1999);
+// console.log(age);
+
+// //Function Expression
+// const calAge2 = function (birthYear){
+//     return 2024- birthYear;
+// }
+//  const age1 = calAge2(1998);
+//  console.log(age, age1);
 
 
- //Function coding challenges
+
+
+//  //Function coding challenges
  
- const calcAverage= (a, b, c)=>(a+b+c)/3;
+//  const calcAverage= (a, b, c)=>(a+b+c)/3;
  
- const  scoreDolphins = calcAverage(44, 23, 71);
- console.log(scoreDolphins);
+//  const  scoreDolphins = calcAverage(44, 23, 71);
+//  console.log(scoreDolphins);
  
- const scoreKoalas =calcAverage(65, 54, 49);
- console.log(scoreKoalas);
+//  const scoreKoalas =calcAverage(65, 54, 49);
+//  console.log(scoreKoalas);
  
- const checkWinner = function(avgDolphins, avgKoalas){
-    if (avgDolphins >= avgKoalas){
-        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
-    }else if (avgKoalas >= avgDolphins) {
-        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
-    }else{
-        console.log('No team wins...');
-    }
- }
+//  const checkWinner = function(avgDolphins, avgKoalas){
+//     if (avgDolphins >= avgKoalas){
+//         console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+//     }else if (avgKoalas >= avgDolphins) {
+//         console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+//     }else{
+//         console.log('No team wins...');
+//     }
+//  }
 
-  checkWinner(scoreDolphins, scoreKoalas);
+//   checkWinner(scoreDolphins, scoreKoalas);
     
+//Array 
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  }
+  
+  const bills =[125, 555, 44];
+  const tips= [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+  
+//   console.log( bills, tips);
+
+  console.log(tips[0]);
+
+
+  
+
 
 
