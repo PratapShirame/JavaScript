@@ -5,15 +5,15 @@ const myHeros =["Ajay", " Sunil", "Aksshay"]
 console.log(myArr);
 
 // revers array 
-myArr.reverse();
-console.log(myArr);
+const reversArr = myArr.reverse();
+console.log(reversArr);
 
 // Combine tow diffrece array in the single array
 const combinArr= myArr.concat(myHeros);
 console.log(combinArr);
+console.log(myArr, myHeros);
 
 // Add the new element in the aaray 
-const newArr = myArr.push("Pratap");
-console.log(newArr);
+myArr.push("Pratap");
+console.log(myArr);
 
-console.log(combinArr);
