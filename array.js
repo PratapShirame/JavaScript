@@ -23,13 +23,15 @@ console.log(newArry);
 const jsUser= {
     fristName : "Pratap",
     lastName : " Shirame",
-    age : 25,
     calAge: function(age){
         const currentYear = new Date().getFullYear();
-        return this.birthYear = currentYear - this.age;
+        return this.birthYear = currentYear - age;
     }
+
     
 }
-console.log(jsUser.calAge());
-console.log(jsUser);
+const age2 = jsUser.calAge(17);
+
+console.log(age2);
+
 
