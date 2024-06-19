@@ -72,3 +72,12 @@ function userLog(userName) {
 }
 
 userLog("Pratap");
+
+
+const brainMind = 'coffe2';
+
+if( brainMind === "coffe"){
+    console.log("Keep Coding");
+}else{
+    console.log("Order Coffer");
+}
